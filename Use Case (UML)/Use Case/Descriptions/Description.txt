@@ -1,0 +1,7 @@
+Kasutaja soovib leida rakendusi, mis pole enam tänapäeval eriti levinud. 
+Selleks on vaja tal näha nende rakendustega seotud informatsiooni.
+Kasutaja tahab näha rakenduste loetelu. Andmed peavad olema andmebaasist kättesaadavad.
+Kasutaja tahab otsida rakendust nimepidi. Andmed peavad olema andmebaasist kättesaadavad.
+Kasutaja tahab sorteerida rakenduste loetelu. Andmed peavad olema andmebaasist kättesaadavad.
+Kasutaja tahab anda tagasisidet rakenduse kohta. Administraator on teinud tagasiside andmise võimalikuks kasutajale veebiteel.
+Kasutaja tahab kontakteeruda administraatoriga. Administraator on kontaktinfo admebaasi sisestanud ning teinud selle kasutajale kättesaadavaks.
