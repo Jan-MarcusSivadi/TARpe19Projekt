@@ -16,7 +16,7 @@ Võimaldada kasutajal lihtsalt ja mugavalt ligipääseda vähemlevinud (vanemate
 Kõik sammud viiakse läbi Git süsteemi kasutades (git commit ...)
  * Sivadi
     * Planeerib projekti
-    * Alustab prjekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
+    * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
     * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine)
     * täpsustamisel...
 
@@ -26,7 +26,7 @@ Kõik sammud viiakse läbi Git süsteemi kasutades (git commit ...)
  * Tavaste
     * Aitab planeerida projekti
     * Loob UML diagramme (Rakenduste_sorteerimine)
-    * Korraldab projekti koosolekuid
+    * Korraldab vajadusel projekti koosolekuid
     * täpsustamisel...
 
 ## Täpsem kirjeldus
