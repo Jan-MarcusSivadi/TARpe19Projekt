@@ -17,15 +17,16 @@ Kõik sammud viiakse läbi Git süsteemi kasutades (git commit ...)
  * Sivadi
     * Planeerib projekti
     * Alustab prjekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
+    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine)
     * täpsustamisel...
 
  * Bružas
-    * Aitab planeerida projekti
-    * Korraldab projekti koosolekuid
     * täpsustamisel...
 
  * Tavaste
     * Aitab planeerida projekti
+    * Loob UML diagramme (Rakenduste_sorteerimine)
+    * Korraldab projekti koosolekuid
     * täpsustamisel...
 
 ## Täpsem kirjeldus
