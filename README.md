@@ -13,7 +13,6 @@ Võimaldada kasutajal lihtsalt ja mugavalt ligipääseda vähemlevinud (vanemate
  * VS Code
 
 ## Tööplaan
-Kõik sammud viiakse läbi Git süsteemi kasutades (git commit ...)
  * Sivadi
     * Planeerib projekti
     * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
