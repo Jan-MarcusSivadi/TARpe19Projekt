@@ -1,12 +1,12 @@
 # Ülesande püstitus
 Järgnev informatsioon võib aja jooksul muutuda.
 
-## Rakenduse Eesmärk
-Võimaldada kasutajal lihtsalt ja mugavalt ligipääseda vähemlevinud (vanematele) rakendustele ning ka nende kohta leida vajalikku informatsiooni.
+## Projekti Eesmärk
+Võimaldada lihtsalt ja mugavalt ligipääseda vähemlevinud (vanematele) rakendustele ning ka nende kohta leida vajalikku informatsiooni.
 
 ## Kasutatavad töövahendid
  * Arvuti
- * MS Office tarkvara (Word, Excel jms.)
+ * MS Office tarkvara (Word, Excel, Project 2019 jms.)
  * CASE vahendid: Lucidchart (UML, ERD)
  * GIT
  * Github
@@ -15,18 +15,19 @@ Võimaldada kasutajal lihtsalt ja mugavalt ligipääseda vähemlevinud (vanemate
 ## Tööplaan
  * Sivadi
     * Planeerib projekti
-    * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
+    * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus) -> README.md fail
     * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine)
-    * täpsustamisel...
-
- * Bružas
-    * täpsustamisel...
+    * MS Project 2019 faili loomine ja täitmine
+    * Tervikliku dokumentatsiooni loomine ja täitmine
 
  * Tavaste
     * Aitab planeerida projekti
-    * Loob UML diagramme (Rakenduste_sorteerimine)
+    * Loob UML diagramme (Rakenduse_tagasiside, Rakenduste_sorteerimine)
     * Korraldab vajadusel projekti koosolekuid
     * täpsustamisel...
+
+ * Bružas
+    * [ei osale]
 
 ## Täpsem kirjeldus
 Leida vähemlevinumad rakendused või programmid, mille kohta pole internetis eriti palju informatsiooni.
