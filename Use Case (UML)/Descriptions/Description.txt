@@ -3,5 +3,4 @@ Selleks on vaja tal näha nende rakendustega seotud informatsiooni.
 Kasutaja tahab näha rakenduste loetelu.
 Kasutaja tahab filtreerida rakenduste loetelu.
 Kasutaja tahab sorteerida rakenduste loetelu.
-Kasutaja tahab anda tagasisidet rakenduse kohta. Administraator on teinud tagasiside andmise võimalikuks kasutajale vormi näol.
-Kasutaja tahab kontakteeruda administraatoriga. Administraator on enda kontaktinfo andmebaasi sisestanud ning teinud selle kasutajale kättesaadavaks.
+Kasutaja tahab rakenduse kohta tagasisidet anda

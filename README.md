@@ -16,13 +16,13 @@ Võimaldada lihtsalt ja mugavalt ligipääseda vähemlevinud (vanematele) rakend
  * Sivadi
     * Planeerib projekti
     * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus) -> README.md fail
-    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine)
+    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine, Rakenduste_sorteerimine)
     * MS Project 2019 faili loomine ja täitmine
     * Tervikliku dokumentatsiooni loomine ja täitmine
 
  * Tavaste
     * Aitab planeerida projekti
-    * Loob UML diagramme (Rakenduse_tagasiside, Rakenduste_sorteerimine)
+    * Loob UML diagramme (Rakenduse_tagasiside, -)
     * Korraldab vajadusel projekti koosolekuid
     * täpsustamisel...
 
@@ -38,5 +38,6 @@ Luua selle info põhjal veebileht, kus kuvatakse rakenduste kohta järgmist info
  * autorid
  * firma/kompanii
  * allikad
+jne.
 
 Rakenduste leotelu salvestatakse andmebaasi, et neid kasutajale veebilehel kuvada.
