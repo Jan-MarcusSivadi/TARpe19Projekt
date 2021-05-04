@@ -38,6 +38,6 @@ Luua selle info põhjal veebileht, kus kuvatakse rakenduste kohta järgmist info
  * autorid
  * firma/kompanii
  * allikad
-jms.
+jms..
 
 Rakenduste leotelu salvestatakse andmebaasi, et neid kasutajale veebilehel kuvada.
