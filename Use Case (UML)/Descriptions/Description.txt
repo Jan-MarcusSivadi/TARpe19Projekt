@@ -1,6 +1,13 @@
-Kasutaja soovib leida rakendusi, mis pole enam tänapäeval eriti levinud. 
-Selleks on vaja tal näha nende rakendustega seotud informatsiooni.
-Kasutaja tahab näha rakenduste loetelu.
-Kasutaja tahab filtreerida rakenduste loetelu.
-Kasutaja tahab sorteerida rakenduste loetelu.
-Kasutaja tahab rakenduse kohta tagasisidet anda
+Kasutaja soovib leida rakendusi, mis pole enam tänapäeval eriti levinud. ​
+
+Kasutaja soovib näha rakendusega seotud informatsiooni.​
+
+​
+
+Kasutaja tahab näha rakenduste loetelu.​
+
+Kasutaja tahab filtreerida rakenduste loetelu.​
+
+Kasutaja tahab sorteerida rakenduste loetelu.​
+
+Kasutaja soovib selle veebirakenduse kohta tagasisidet anda.
