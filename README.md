@@ -13,19 +13,9 @@ Võimaldada kasutajal lihtsalt ja mugavalt ligipääseda vähemlevinud (vanemate
  * VS Code
 
 ## Tööplaan
- * Sivadi
-    * Planeerib projekti
-    * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus)
-    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine)
-    * täpsustamisel...
-
- * Bružas
-    * täpsustamisel...
-
  * Tavaste
     * Aitab planeerida projekti
-    * Loob UML diagramme (Rakenduste_sorteerimine)
-    * Korraldab vajadusel projekti koosolekuid
+    * Loob UML diagramme (Rakenduste_sorteerimine 2, Rakenduse_tagasiside)
     * täpsustamisel...
 
 ## Täpsem kirjeldus
