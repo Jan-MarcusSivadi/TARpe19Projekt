@@ -20,14 +20,6 @@ Võimaldada lihtsalt ja mugavalt ligipääseda vähemlevinud (vanematele) rakend
     * MS Project 2019 faili loomine ja täitmine
     * Tervikliku dokumentatsiooni loomine ja täitmine
 
- * Tavaste
-    * Aitab planeerida projekti
-    * Loob UML diagramme (Rakenduste_sorteerimine 2, Rakenduse_tagasiside)
-    * täpsustamisel...
-
- * Bružas
-    * -
-
 ## Täpsem kirjeldus
 Leida vähemlevinumad rakendused või programmid, mille kohta pole internetis eriti palju informatsiooni.
 Luua selle info põhjal veebileht, kus kuvatakse rakenduste kohta järgmist informatsiooni:
