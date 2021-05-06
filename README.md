@@ -16,18 +16,17 @@ Võimaldada lihtsalt ja mugavalt ligipääseda vähemlevinud (vanematele) rakend
  * Sivadi
     * Planeerib projekti
     * Alustab projekti dokumentatsiooni algsema versiooniga, kus on kirjeldatatud erinevad projekti osad (eesmärk, töövahendid, tööplaan, kirjeldus) -> README.md fail
-    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine, Rakenduste_sorteerimine)
+    * Loob UML diagramme (Rakenduste_kuvamine, Rakenduste_filtreerimine, Rakenduste_sorteerimine 1)
     * MS Project 2019 faili loomine ja täitmine
     * Tervikliku dokumentatsiooni loomine ja täitmine
 
  * Tavaste
     * Aitab planeerida projekti
-    * Loob UML diagramme (Rakenduse_tagasiside, -)
-    * Korraldab vajadusel projekti koosolekuid
+    * Loob UML diagramme (Rakenduste_sorteerimine 2, Rakenduse_tagasiside)
     * täpsustamisel...
 
  * Bružas
-    * [ei osale]
+    * -
 
 ## Täpsem kirjeldus
 Leida vähemlevinumad rakendused või programmid, mille kohta pole internetis eriti palju informatsiooni.
