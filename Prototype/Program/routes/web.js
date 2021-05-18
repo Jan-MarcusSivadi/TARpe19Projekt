@@ -1,13 +1,14 @@
 /// Imports
 const express = require('express');
 const appController = require('../controllers/appController');
-// const error404Controller = require('../controllers/error404Controller');
+const error404Controller = require('../controllers/err404Controller');
 const router = express.Router();
 
 /// Routes
-// main page
+// main page & home
 router.get('/', appController.getMainPage);
+router.get('/home/', appController.getMainPage);
 // error 404
-// router.get('*', error404Controller.getErrorPage);
+router.get('*', error404Controller.getErrorPage);
 
 module.exports = router;
