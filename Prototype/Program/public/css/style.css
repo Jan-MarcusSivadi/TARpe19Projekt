@@ -1,0 +1,70 @@
+:root
+{
+    --BG-color: rgb(27, 27, 27);
+    --BG-color2: rgb(39, 39, 39);
+    --BG-press-logos: lightgray;
+
+    --santa-red: #1161a3;
+    --santa-red-alpha: rgba(163, 17, 34, 0.4);
+    --santa-green: rgb(0, 114, 19);
+    --santa-white: rgb(255, 255, 255);
+    
+    --text-color: rgb(255, 255, 255);
+}
+
+html {
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+}
+
+body
+{
+    /*
+    */
+    background-color: var(--BG-color);
+}
+
+.container-fluid
+{
+    padding: 0;
+}
+
+#title
+{
+    background-color: var(--santa-red);
+    padding: 1% 4%;
+    color: var(--text-color);
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/*NAVBAR*/
+.navbar
+{
+    padding-bottom: 0.7rem;
+    padding-left: 0;
+    width: auto;
+}
+
+.nav-item
+{
+    padding: 0.2rem;
+}
+
+.nav-link
+{
+    font-size: 1.3rem;
+}
+
+.navbar-brand
+{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: 700;
+}
