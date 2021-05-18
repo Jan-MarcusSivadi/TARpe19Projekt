@@ -16,6 +16,7 @@ html {
 
 body {
     background-color: var(--BG-color);
+    color: var(--white);
 }
 
 .main-page {
@@ -122,5 +123,5 @@ h1 {
 }
 
 .content-title {
-    color: white;
+    font-weight: 700;
 }
