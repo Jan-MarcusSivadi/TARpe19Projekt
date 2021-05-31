@@ -8,6 +8,8 @@ const router = express.Router();
 // main page & home
 router.get('/', appController.getMainPage);
 router.get('/home/', appController.getMainPage);
+router.get('/signup/', appController.getSignUpPage);
+router.get('/signin/', appController.getSignInPage);
 // error 404
 router.get('*', error404Controller.getErrorPage);
 

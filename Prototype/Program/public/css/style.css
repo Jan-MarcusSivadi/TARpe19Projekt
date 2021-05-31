@@ -45,6 +45,28 @@ body {
     color: white;
 }
 
+.loader {
+    border: 16px solid #f3f3f311;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-bottom: 16px solid #9034db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 .container-fluid {
     padding: 0;
 }
@@ -53,6 +75,7 @@ body {
     background-color: var(--blue);
     padding: 1% 4%;
     color: var(--text-color);
+    /* box-shadow: 0 0 13px 3px var(--blue); */
 }
 #title-description {
     padding: 0;
@@ -124,4 +147,13 @@ h1 {
 
 .content-title {
     font-weight: 700;
+}
+.signup-title {
+    margin: 0 auto;
+    margin-top: 24px;
+    padding: 12px;
+    width: 70%;
+    height: 50%;
+    background-color: var(--blue);
+    text-align: center;
 }
