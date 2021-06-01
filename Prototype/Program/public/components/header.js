@@ -50,10 +50,10 @@ class Header extends HTMLElement {
                         <a href="/contact" class="nav-link">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a id="signs" href="/signin" type="button" class="nav-link btn btn-outline-success">Sign In</a>
+                        <a id="signs" href="/signin" type="submit" class="nav-link btn btn-outline-success">Sign In</a>
                     </li>
                     <li class="nav-item">
-                        <a id="signs" href="/signup" type="button" class="nav-link btn btn-primary">Sign Up</a>
+                        <a id="signs" href="/signup" type="submit" class="nav-link btn btn-primary">Sign Up</a>
                     </li>
                 </ul>
             </div>

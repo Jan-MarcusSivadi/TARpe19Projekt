@@ -13,7 +13,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/sign.css">
     <script src="components/header.js" type="text/javascript" defer></script>
-    <title>Sign up</title>
+    <title>Sign in</title>
 </head>
 
 <body>
@@ -22,10 +22,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                    <div class="card card-signup my-5">
+                    <div class="card card-sign my-5">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Sign In</h5>
-                            <form class="form-signup">
+                            <h5 class="signTitle card-title text-center">Sign In</h5>
+                            <form class="form-sign" style="display: none;">
 
                                 <div class="form-label-group">
                                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
@@ -43,11 +43,47 @@
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                                     <label class="custom-control-label" for="customCheck1">Remember password</label>
                                 </div>
-                                <button id="signs" type="submit" class="btn btn-lg btn btn-primary text-uppercase">Sign In</button>
+                                <button id="signs" type="submit" class="btn btn-lg btn btn-primary text-uppercase">Sign
+                                    In</button>
                                 <hr class="my-4">
                                 <a id="link" href="forgotemail" class="custom-control-label">Forgot your email?</a>
                                 <br>
-                                <a id="link" href="forgotpassword" class="custom-control-label">Forgot your password?</a>
+                                <a id="link" href="forgotpassword" class="custom-control-label">Forgot your
+                                    password?</a>
+                            </form>
+
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-12">
+                                    <label for="validationCustomEmail" class="form-label">Email</label>
+                                    <div class="input-group has-validation">
+                                        <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                                        <input type="email" class="form-control" id="validationCustomEmail"
+                                            aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationCustomPassword" class="form-label">Password</label>
+                                    <div class="input-group has-validation">
+                                        <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                                        <input type="password" class="form-control" id="validationCustomPassword"
+                                            aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your password.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Sign In</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -55,6 +91,29 @@
             </div>
         </div>
     </main>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>

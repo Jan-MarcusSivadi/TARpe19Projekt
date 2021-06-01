@@ -2,68 +2,211 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bs/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bs/bootstrap-grid.min.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/sign.css">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <title>Sign up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bs/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bs/bootstrap-grid.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/sign.css">
+  <script src="components/header.js" type="text/javascript" defer></script>
+  <title>Sign up</title>
 </head>
 
 <body>
-    <!-- <header-component></header-component> -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                    <div class="card card-signup my-5">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Sign Up</h5>
-                            <form class="form-signup">
+  <!-- <header-component></header-component> -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-sign my-5">
+            <div class="card-body">
+              <h5 class="signTitle card-title text-center">Sign Up</h5>
+              <form class="form-sign" style="display: none;">
 
-                                <div class="form-label-group">
-                                    <input type="text" id="inputFName" class="form-control" placeholder="First name"
-                                        required autofocus>
-                                    <label for="inputFName">First name</label>
-                                </div>
+                <div class="form-label-group">
+                  <input type="text" id="inputFName" class="form-control" placeholder="First name" required autofocus>
+                  <label for="inputFName">First name</label>
+                </div>
 
-                                <div class="form-label-group">
-                                    <input type="text" id="inputLName" class="form-control" placeholder="Last name"
-                                        required autofocus>
-                                    <label for="inputLName">Last name</label>
-                                </div>
+                <div class="form-label-group">
+                  <input type="text" id="inputLName" class="form-control" placeholder="Last name" required autofocus>
+                  <label for="inputLName">Last name</label>
+                </div>
 
-                                <div class="form-label-group">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                        required autofocus>
-                                    <label for="inputEmail">Email address</label>
-                                </div>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
+                    autofocus>
+                  <label for="inputEmail">Email address</label>
+                </div>
 
-                                <div class="form-label-group">
-                                    <input type="password" id="inputPassword" class="form-control"
-                                        placeholder="Password" required>
-                                    <label for="inputPassword">Password</label>
-                                </div>
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" name="password"
+                    oninput="document.getElementById('confirmPassword').pattern = this.value.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&')"
+                    required class="form-control" placeholder="Password">
+                  <label for="inputPassword">Password</label>
+                </div>
 
-                                <!-- <div class="custom-control custom-checkbox mb-3">
+                <div class="form-label-group">
+                  <input type="password" id="confirmPassword" name="confirm" pattern="" title="Fields must match"
+                    required class="form-control" placeholder="Confirm Password">
+                  <label for="confirmPassword">Confirm Password</label>
+                </div>
+
+
+
+
+                <!-- <div class="custom-control custom-checkbox mb-3">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                                     <label class="custom-control-label" for="customCheck1">Remember password</label>
                                 </div> -->
-                                <button id="signs" type="submit" class="btn btn-lg btn btn-primary text-uppercase">Sign Up</button>
-                                <!-- <hr class="my-4"> -->
-                            </form>
-                        </div>
-                    </div>
+                <button id="signs" type="submit" class="btn btn-lg btn btn-primary text-uppercase">Sign
+                  Up</button>
+                <!-- <hr class="my-4"> -->
+              </form>
+
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
                 </div>
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustomEmail" class="form-label">Your email address</label>
+                  <div class="input-group has-validation">
+                    <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                    <input type="email" class="form-control" id="validationCustomEmail"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustomPassword" class="form-label">Password</label>
+                  <div class="input-group has-validation">
+                    <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                    <input type="password" class="form-control" id="validationCustomPassword"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please enter a password. Use 8 or more characters with a mix of letters, numbers & symbols.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustomPasswordC" class="form-label">Confirm</label>
+                  <div class="input-group has-validation">
+                    <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                    <input type="password" class="form-control" id="validationCustomPasswordC"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback" id="password-confirm-invalid"></div>
+                    <div class="valid-feedback" id="password-confirm-valid"></div>
+                  </div>
+                </div>
+                <!--
+                <div class="col-md-12">
+                  <label for="validationCustom03" class="form-label">Country</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Estonia</option>
+                    <option>Finland</option>
+                    <option>England</option>
+                    <option>Sweden</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" minlength="4" maxlength="20" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city that  is between 4 to 20 characters long.
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Sign Up</button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (
+      function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+
+        //Password Validation
+        var password = document.getElementById("validationCustomPassword"),
+        confirm_password = document.getElementById("validationCustomPasswordC"),
+        password_confirm_field_invalid = document.getElementById("password-confirm-invalid"),
+        password_confirm_field_valid = document.getElementById("password-confirm-valid");
+
+        function validatePassword() {
+          if (password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+            password_confirm_field_invalid.innerHTML = "Passwords Don't Match";
+          } else {
+            confirm_password.setCustomValidity('');
+            password_confirm_field_valid.innerHTML = "Passwords Match!";
+          }
+        }
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+      })()
+  </script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 // routes
 const routes = require('./routes/web');

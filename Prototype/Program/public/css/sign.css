@@ -1,14 +1,17 @@
 :root {
+    /* FORM card */
+    --sign-card-border-radius: 0.5rem;
+
+    /* INPUTS */
     --input-padding-x: 1.5rem;
     --input-padding-y: .75rem;
 
-    --BG-color: rgb(27, 27, 27);
+    /* COLORS */
+     --BG-color: white; /*rgb(27, 27, 27); */
     --BG-color2: rgb(75, 75, 75);
     --BG-press-logos: lightgray;
-
     --blue: #1161a3;
-    --white: rgb(255, 255, 255);
-    
+    --color: black;
     --text-color: rgb(255, 255, 255);
   }
   
@@ -19,27 +22,37 @@
 
   body {
     background-color: var(--BG-color);
-    color: var(--white);
+    color: var(--color);
   }
   
-  .card-signup {
+  .signTitle {
+    margin: -2.4rem -2.4rem;
+    padding: 1rem 1rem;
     border: 0;
-    border-radius: 0.8rem;
+    border-radius: var(--sign-card-border-radius);
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     background: var(--blue);
+    color: var(--text-color);
+  }
+
+  .card-sign {
+    border: 0;
+    border-radius: var(--sign-card-border-radius);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background: var(--text-color);
   }
   
-  .card-signup .card-title {
+  .card-sign .card-title {
     margin-bottom: 2rem;
     font-weight: 300;
     font-size: 1.5rem;
   }
   
-  .card-signup .card-body {
-    padding: 2rem;
+  .card-sign .card-body {
+    padding: 2.4rem;
   }
   
-  .form-signup {
+  .form-sign {
     width: 100%;
   }
 
@@ -48,9 +61,9 @@
       text-decoration: none;
   }
   
-  .form-signup .btn {
+  .form-sign .btn {
     font-size: 80%;
-    border-radius: 0.8em;
+    border-radius: var(--sign-card-border-radius);
     letter-spacing: .1rem;
     font-weight: bold;
     padding: 1rem;
@@ -66,7 +79,7 @@
   
   .form-label-group input {
     height: auto;
-    border-radius: 0.3rem;
+    border-radius: var(--sign-card-border-radius);;
   }
   
   .form-label-group>input,
