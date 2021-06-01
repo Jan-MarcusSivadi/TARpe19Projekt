@@ -67,10 +67,13 @@
                 <!-- <hr class="my-4"> -->
               </form>
 
-              <form class="row g-3 needs-validation" novalidate>
+              <form class="row g-3 needs-validation" novalidate method="POST">
                 <div class="col-md-12">
                   <label for="validationCustom01" class="form-label">First name</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                    Enter your first name
+                  </div>
                   <div class="valid-feedback">
                     Looks good!
                   </div>
@@ -78,6 +81,9 @@
                 <div class="col-md-12">
                   <label for="validationCustom02" class="form-label">Last name</label>
                   <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="invalid-feedback">
+                    Enter your last name
+                  </div>
                   <div class="valid-feedback">
                     Looks good!
                   </div>
@@ -89,7 +95,7 @@
                     <input type="email" class="form-control" id="validationCustomEmail"
                       aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                      Please enter a valid email.
+                      Please enter a valid email
                     </div>
                   </div>
                 </div>
@@ -97,11 +103,10 @@
                   <label for="validationCustomPassword" class="form-label">Password</label>
                   <div class="input-group has-validation">
                     <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
-                    <input type="password" class="form-control" id="validationCustomPassword"
+                    <input minlength="8" type="password" class="form-control" id="validationCustomPassword"
                       aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please enter a password. Use 8 or more characters with a mix of letters, numbers & symbols.
-                    </div>
+                    <div class="invalid-feedback" id="password-invalid">Use 8 characters or more for your password</div>
+                    <div class="valid-feedback" id="password-valid"></div>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -110,7 +115,7 @@
                     <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                     <input type="password" class="form-control" id="validationCustomPasswordC"
                       aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback" id="password-confirm-invalid"></div>
+                    <div class="invalid-feedback" id="password-confirm-invalid">This field can't be empty</div>
                     <div class="valid-feedback" id="password-confirm-valid"></div>
                   </div>
                 </div>
@@ -156,7 +161,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Sign Up</button>
+                  <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
               </form>
             </div>
@@ -190,19 +195,23 @@
 
         //Password Validation
         var password = document.getElementById("validationCustomPassword"),
-        confirm_password = document.getElementById("validationCustomPasswordC"),
-        password_confirm_field_invalid = document.getElementById("password-confirm-invalid"),
-        password_confirm_field_valid = document.getElementById("password-confirm-valid");
+          confirm_password = document.getElementById("validationCustomPasswordC"),
+          password_field_invalid = document.getElementById("password-invalid"),
+          password_field_valid = document.getElementById("password-valid"),
+          password_confirm_field_invalid = document.getElementById("password-confirm-invalid"),
+          password_confirm_field_valid = document.getElementById("password-confirm-valid");
 
         function validatePassword() {
           if (password.value != confirm_password.value) {
             confirm_password.setCustomValidity("Passwords Don't Match");
             password_confirm_field_invalid.innerHTML = "Passwords Don't Match";
           } else {
-            confirm_password.setCustomValidity('');
+
+            if(password.checkValidity()) confirm_password.setCustomValidity('');
             password_confirm_field_valid.innerHTML = "Passwords Match!";
           }
         }
+
         password.onchange = validatePassword;
         confirm_password.onkeyup = validatePassword;
       })()

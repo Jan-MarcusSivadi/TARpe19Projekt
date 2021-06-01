@@ -1,11 +1,11 @@
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    const header = 
-    `
+    connectedCallback() {
+        const header =
+            `
       <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,8 +70,8 @@ class Header extends HTMLElement {
 </body>
 </html>
     `;
-    this.innerHTML = header;
-  }
+        this.innerHTML = header;
+    }
 }
 
 customElements.define('header-component', Header);

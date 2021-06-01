@@ -6,7 +6,7 @@
     --blue: #1161a3;
     --white: rgb(255, 255, 255);
     
-    --text-color: rgb(255, 255, 255);
+    --text-color: black; /*rgb(255, 255, 255)*/
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-    background-color: var(--BG-color);
-    color: var(--white);
+    background-color: var(--white);
+    /* color: var(--text-color); */
 }
 
 .main-page {
@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
     transform: rotate(-3deg);
 }
 .main2 {
@@ -42,7 +42,7 @@ body {
     display: flex;
     align-items: justify;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
 }
 
 .loader {
@@ -84,6 +84,7 @@ body {
     font-family: 'Ubuntu';
     font-size: 1.2rem;
     font-weight: 500;
+    color: var(--white);
 }
 #title-description2 {
     padding: 0;
