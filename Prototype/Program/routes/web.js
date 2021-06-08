@@ -5,21 +5,25 @@ const usersController = require('../controllers/usersController');
 const error404Controller = require('../controllers/err404Controller');
 const router = express.Router();
 
+
 /// Routes
 // main page & home
-router.get('/', appController.getMainPage);
-router.get('/home/', appController.getMainPage);
+router.get('/', appController.mainPage);
+router.get('/home/', appController.mainPage);
 
-// sign up page
-router.post('/signup/', appController.getSignUpPage);
-// sign in page
-router.post('/signin/', appController.getSignInPage);
-// post user sign up
-router.post('/signingup/', usersController.postNewUser);
-// post user sign in
+// POST up page
+router.post('/signup/', appController.signUpPage);
+// POST in page
+router.post('/signin/', appController.signInPage);
+// // GET in page (error)
+// router.get('/signin/', appController.signInPage);
 
+// POST user sign up
+router.post('/signingup/', usersController.signUserUp);
+// POST user sign in
+router.post('/signingin/', usersController.signUserIn);
 
 // error 404
-router.get('*', error404Controller.getErrorPage);
+router.get('*', error404Controller.errorPage);
 
 module.exports = router;

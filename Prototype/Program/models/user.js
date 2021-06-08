@@ -16,6 +16,10 @@ const UserSchema = mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    pwSalt: {
+        type: String,
+        required: true
     }
 });
 

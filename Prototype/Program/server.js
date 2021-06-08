@@ -7,9 +7,15 @@ const mongoose = require('mongoose');
 // routes
 const routes = require('./routes/web');
 
+// passport
+const passport = require('passport')
+
+// config
+const config = require('./config/database');
+
 // Connect to DB
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://adminUser:bhI7zs4eCUuFUWcu@cluster0.8c0rp.mongodb.net/userDB?retryWrites=true&w=majority";
+const uri = config.database;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
@@ -40,6 +46,11 @@ app.use(express.static('public'));
 
 // use bodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// use passport (Middleware)
+require('./config/passport')(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // use routes
 app.use(routes);
