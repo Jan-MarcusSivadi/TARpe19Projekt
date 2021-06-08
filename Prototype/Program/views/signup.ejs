@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/bs/bootstrap-grid.min.css">
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/sign.css">
-  <script src="components/header.js" type="text/javascript" defer></script>
   <title>Sign up</title>
 </head>
 
@@ -24,53 +23,11 @@
           <div class="card card-sign my-5">
             <div class="card-body">
               <h5 class="signTitle card-title text-center">Sign Up</h5>
-              <form class="form-sign" style="display: none;">
 
-                <div class="form-label-group">
-                  <input type="text" id="inputFName" class="form-control" placeholder="First name" required autofocus>
-                  <label for="inputFName">First name</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="text" id="inputLName" class="form-control" placeholder="Last name" required autofocus>
-                  <label for="inputLName">Last name</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
-                    autofocus>
-                  <label for="inputEmail">Email address</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" name="password"
-                    oninput="document.getElementById('confirmPassword').pattern = this.value.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&')"
-                    required class="form-control" placeholder="Password">
-                  <label for="inputPassword">Password</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="confirmPassword" name="confirm" pattern="" title="Fields must match"
-                    required class="form-control" placeholder="Confirm Password">
-                  <label for="confirmPassword">Confirm Password</label>
-                </div>
-
-
-
-
-                <!-- <div class="custom-control custom-checkbox mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Remember password</label>
-                                </div> -->
-                <button id="signs" type="submit" class="btn btn-lg btn btn-primary text-uppercase">Sign
-                  Up</button>
-                <!-- <hr class="my-4"> -->
-              </form>
-
-              <form class="row g-3 needs-validation" novalidate method="POST">
+              <form class="row g-3 needs-validation" novalidate method="POST" action="/signingup">
                 <div class="col-md-12">
                   <label for="validationCustom01" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <input type="text" class="form-control" id="validationCustom01" name="firstNameF" required>
                   <div class="invalid-feedback">
                     Enter your first name
                   </div>
@@ -80,7 +37,7 @@
                 </div>
                 <div class="col-md-12">
                   <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <input type="text" class="form-control" id="validationCustom02" name="lastNameF" required>
                   <div class="invalid-feedback">
                     Enter your last name
                   </div>
@@ -93,7 +50,7 @@
                   <div class="input-group has-validation">
                     <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                     <input type="email" class="form-control" id="validationCustomEmail"
-                      aria-describedby="inputGroupPrepend" required>
+                      aria-describedby="inputGroupPrepend" name="emailF" required>
                     <div class="invalid-feedback">
                       Please enter a valid email
                     </div>
@@ -103,9 +60,9 @@
                   <label for="validationCustomPassword" class="form-label">Password</label>
                   <div class="input-group has-validation">
                     <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
-                    <input minlength="8" type="password" class="form-control" id="validationCustomPassword"
-                      aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback" id="password-invalid">Use 8 characters or more for your password</div>
+                    <input minlength="4" type="password" class="form-control" id="validationCustomPassword"
+                      aria-describedby="inputGroupPrepend" name="passwordF" required>
+                    <div class="invalid-feedback" id="password-invalid">Use 4 characters or more for your password</div>
                     <div class="valid-feedback" id="password-valid"></div>
                   </div>
                 </div>
@@ -114,41 +71,11 @@
                   <div class="input-group has-validation">
                     <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                     <input type="password" class="form-control" id="validationCustomPasswordC"
-                      aria-describedby="inputGroupPrepend" required>
+                      aria-describedby="inputGroupPrepend" name="passwordConfirmF" required>
                     <div class="invalid-feedback" id="password-confirm-invalid">This field can't be empty</div>
                     <div class="valid-feedback" id="password-confirm-valid"></div>
                   </div>
                 </div>
-                <!--
-                <div class="col-md-12">
-                  <label for="validationCustom03" class="form-label">Country</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>Estonia</option>
-                    <option>Finland</option>
-                    <option>England</option>
-                    <option>Sweden</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" minlength="4" maxlength="20" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city that  is between 4 to 20 characters long.
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationCustom04" class="form-label">State</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                -->
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -206,8 +133,8 @@
             confirm_password.setCustomValidity("Passwords Don't Match");
             password_confirm_field_invalid.innerHTML = "Passwords Don't Match";
           } else {
-
-            if(password.checkValidity()) confirm_password.setCustomValidity('');
+            // if(password.checkValidity()) 
+            confirm_password.setCustomValidity('');
             password_confirm_field_valid.innerHTML = "Passwords Match!";
           }
         }

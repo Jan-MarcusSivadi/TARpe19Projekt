@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/bs/bootstrap-grid.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/sign.css">
-    <script src="components/header.js" type="text/javascript" defer></script>
     <title>Sign in</title>
 </head>
 
@@ -52,13 +51,13 @@
                                     password?</a>
                             </form>
 
-                            <form class="row g-3 needs-validation" novalidate>
+                            <form class="row g-3 needs-validation" novalidate method="POST" action="/signingin">
                                 <div class="col-md-12">
                                     <label for="validationCustomEmail" class="form-label">Email</label>
                                     <div class="input-group has-validation">
                                         <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                                         <input type="email" class="form-control" id="validationCustomEmail"
-                                            aria-describedby="inputGroupPrepend" required>
+                                            aria-describedby="inputGroupPrepend" name="emailF" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid email.
                                         </div>
@@ -69,7 +68,7 @@
                                     <div class="input-group has-validation">
                                         <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                                         <input type="password" class="form-control" id="validationCustomPassword"
-                                            aria-describedby="inputGroupPrepend" required>
+                                            aria-describedby="inputGroupPrepend" name="passwordF" required>
                                         <div class="invalid-feedback">
                                             Please enter your password.
                                         </div>

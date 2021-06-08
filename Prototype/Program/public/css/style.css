@@ -1,5 +1,5 @@
 :root {
-    --BG-color: rgb(27, 27, 27);
+    --BG-color: rgb(240, 240, 240); /*rgb(27, 27, 27)*/;
     --BG-color2: rgb(39, 39, 39);
     --BG-press-logos: lightgray;
 
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--BG-color);
     /* color: var(--text-color); */
 }
 
@@ -134,7 +134,7 @@ h1 {
     font-weight: 700;
 }
 
-#signs {
+#signup-btn, #signin-btn {
     margin: 0;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
