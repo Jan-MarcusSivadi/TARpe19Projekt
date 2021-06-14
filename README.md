@@ -31,4 +31,6 @@ Luua selle info põhjal veebileht, kus kuvatakse rakenduste kohta järgmist info
  * allikad
 jms..
 
-Rakenduste leotelu salvestatakse andmebaasi, et neid kasutajale veebilehel kuvada.
+Veebilehe link: https://uncommon-applications.herokuapp.com/
+
+
