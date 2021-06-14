@@ -44,10 +44,10 @@ class Header extends HTMLElement {
                         <a href="/c-apps" class="nav-link">Computer applications</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/rating" class="nav-link">Leave a Rating</a>
+                        <a href="/rate-us" class="nav-link">Leave a Rating</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contact" class="nav-link">Contact us</a>
+                        <a href="/contacts" class="nav-link">Contact us</a>
                     </li>
                     <li class="nav-item">
                         <a id="signin-btn" type="submit" class="nav-link btn border-success" onclick="get('/home')">Signed In</a>

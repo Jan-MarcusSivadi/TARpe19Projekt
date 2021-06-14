@@ -24,7 +24,7 @@ body {
 }
 
 .main {
-    min-height: 600px;
+    /* min-height: 600px;
     margin: 0px auto;
     width: auto;
     max-width: 460px;
@@ -32,17 +32,17 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    transform: rotate(-3deg);
+    transform: rotate(-3deg); */
 }
 .main2 {
-    min-height: 0px;
+    /* min-height: 0px;
     margin: -140px auto;
     width: auto;
     max-width: 420px;
     display: flex;
     align-items: justify;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--text-color); */
 }
 
 .loader {
@@ -157,4 +157,17 @@ h1 {
     height: 50%;
     background-color: var(--blue);
     text-align: center;
+}
+
+.thumbnail {
+    background-image: 'https://play.google.com/store/apps/details?id=com.yodo1.crossyroad&hl=en&gl=US';
+    background-size: cover;
+}
+
+.thumbnail_link {
+    text-decoration-style: none;
+}
+
+.list-group-item {
+    font-size: 1.4rem;
 }

@@ -9,6 +9,23 @@ exports.mainPage = (req, res, next) => {
         :
         res.render('home-out.ejs');
 };
+// Computer apps
+exports.computerApps = (req, res, next) => {
+    res.render('cApps.ejs');
+};
+// Mobile apps
+exports.mobileApps = (req, res, next) => {
+    res.render('mApps.ejs');
+};
+// Rating
+exports.rateUs = (req, res, next) => {
+    res.render('rating.ejs');
+};
+// Rating
+exports.contacts = (req, res, next) => {
+    res.render('contactUs.ejs');
+};
+
 // Sign Up Form
 exports.signUpPage = (req, res, next) => {
     // res.render('signup.ejs');

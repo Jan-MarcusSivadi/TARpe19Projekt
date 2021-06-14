@@ -3,6 +3,7 @@ const express = require('express');
 const appController = require('../controllers/appController');
 const usersController = require('../controllers/usersController');
 const error404Controller = require('../controllers/err404Controller');
+const image = require('../models/image');
 const router = express.Router();
 
 /// Routes
@@ -23,6 +24,10 @@ const redirectHome = (req, res, next) => {
 
 router.get('/', appController.mainPage);
 router.get('/home/', redirectLogin, appController.mainPage);
+router.get('/c-apps', appController.computerApps);
+router.get('/m-apps', appController.mobileApps);
+router.get('/rate-us', redirectLogin, appController.rateUs);
+router.get('/contacts', appController.contacts);
 
 router.get('/signin/', redirectHome, appController.signInPage);
 
@@ -31,6 +36,18 @@ router.get('/signup/', redirectHome, appController.signUpPage);
 router.post('/signup/', redirectHome, usersController.signUserUp);
 router.post('/signin/', redirectHome, usersController.signUserIn);
 router.post('/signout/', redirectLogin, usersController.signUserOut);
+
+// router.get('/', (req, res) => {
+//     image.find({}, (err, items) => {
+//         if (err) {
+//             console.log(err);
+//             res.status(500).send('An error occurred', err);
+//         }
+//         else {
+//             res.render('imagesPage', { items: items });
+//         }
+//     });
+// });
 
 // main page & home
 // router.get('/', appController.mainPage);
